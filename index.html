@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Deshna Saanvi | CSIT Student & Aspiring Backend Developer</title>
+    <title>Deshna Saanvi M | CSIT Student</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
+
     <style>
+
         /* =========================
            GENERAL
         ========================== */
@@ -48,8 +50,9 @@
 
         section {
             padding: 100px 0;
-            scroll-margin-top: 80px;
+            scroll-margin-top: 90px;
         }
+
 
         /* =========================
            NAVBAR
@@ -60,7 +63,9 @@
             top: 18px;
             left: 50%;
             transform: translateX(-50%);
+
             width: min(1080px, 92%);
+
             padding: 14px 22px;
 
             display: flex;
@@ -102,42 +107,57 @@
             color: #8b68c7;
         }
 
+
         /* =========================
            HERO
         ========================== */
 
         .hero {
             min-height: 100vh;
+
             display: flex;
             align-items: center;
+
             position: relative;
+
             padding-top: 130px;
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 900px;
         }
 
         .hello {
             display: inline-block;
+
             padding: 8px 16px;
             margin-bottom: 20px;
 
             background: rgba(255, 255, 255, 0.7);
+
             border: 1px solid #eadfff;
             border-radius: 50px;
 
             color: #8566b3;
+
             font-size: 0.88rem;
             font-weight: 600;
         }
 
+        /* BIGGER FULL NAME */
+
         .hero h1 {
             font-family: "Playfair Display", serif;
-            font-size: clamp(3.5rem, 8vw, 6.5rem);
-            line-height: 1;
+
+            font-size: clamp(4rem, 9vw, 7.5rem);
+
+            line-height: 0.98;
+
             color: #473856;
-            margin-bottom: 22px;
+
+            margin-bottom: 24px;
+
+            letter-spacing: -2px;
         }
 
         .hero h1 span {
@@ -146,15 +166,21 @@
 
         .hero h2 {
             font-size: clamp(1.3rem, 3vw, 2rem);
+
             font-weight: 500;
+
             color: #756783;
+
             margin-bottom: 20px;
         }
 
         .hero p {
             max-width: 680px;
+
             color: #746b7d;
+
             font-size: 1.05rem;
+
             margin-bottom: 30px;
         }
 
@@ -166,52 +192,70 @@
 
         .btn {
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
 
             padding: 13px 22px;
+
             border-radius: 14px;
 
             font-weight: 600;
             font-size: 0.92rem;
 
             transition: 0.3s;
+
+            cursor: pointer;
         }
 
         .btn-primary {
             background: linear-gradient(135deg, #8d6ac3, #aa88d8);
+
             color: white;
+
+            border: none;
+
             box-shadow: 0 12px 25px rgba(141, 106, 195, 0.22);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
+
             box-shadow: 0 17px 30px rgba(141, 106, 195, 0.3);
         }
 
         .btn-secondary {
             background: rgba(255,255,255,0.75);
+
             border: 1px solid #e4d8f2;
+
             color: #6f568d;
         }
 
         .btn-secondary:hover {
             transform: translateY(-3px);
+
             background: white;
         }
 
         .floating-shape {
             position: absolute;
+
             border-radius: 50%;
+
             filter: blur(2px);
+
             opacity: 0.55;
+
             z-index: -1;
         }
 
         .shape-one {
             width: 220px;
             height: 220px;
+
             background: #eadcff;
+
             top: 17%;
             right: 4%;
         }
@@ -219,10 +263,13 @@
         .shape-two {
             width: 130px;
             height: 130px;
+
             background: #dceeff;
+
             bottom: 12%;
             left: 5%;
         }
+
 
         /* =========================
            SECTION HEADINGS
@@ -230,29 +277,40 @@
 
         .section-heading {
             text-align: center;
+
             margin-bottom: 55px;
         }
 
         .section-heading small {
             color: #9a77c8;
+
             font-weight: 700;
+
             text-transform: uppercase;
+
             letter-spacing: 2px;
+
             font-size: 0.75rem;
         }
 
         .section-heading h2 {
             font-family: "Playfair Display", serif;
+
             font-size: clamp(2.2rem, 5vw, 3.3rem);
+
             color: #493956;
+
             margin-top: 8px;
         }
 
         .section-heading p {
             max-width: 620px;
+
             margin: 12px auto 0;
+
             color: #7d7386;
         }
+
 
         /* =========================
            ABOUT
@@ -260,26 +318,33 @@
 
         .about-grid {
             display: grid;
+
             grid-template-columns: 1.2fr 0.8fr;
+
             gap: 30px;
         }
 
         .glass-card {
             background: rgba(255,255,255,0.72);
+
             border: 1px solid rgba(255,255,255,0.9);
+
             border-radius: 28px;
+
             padding: 35px;
 
             box-shadow: 0 18px 55px rgba(91, 65, 120, 0.08);
 
             backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
         }
 
         .glass-card h3 {
             font-family: "Playfair Display", serif;
+
             font-size: 1.7rem;
+
             color: #554263;
+
             margin-bottom: 15px;
         }
 
@@ -289,26 +354,34 @@
 
         .quick-info {
             display: grid;
+
             gap: 14px;
         }
 
         .info-item {
             padding: 17px;
+
             background: #faf7ff;
+
             border: 1px solid #eee5fa;
+
             border-radius: 17px;
         }
 
         .info-item strong {
             display: block;
+
             color: #7256a0;
+
             margin-bottom: 3px;
         }
 
         .info-item span {
             color: #756d7c;
+
             font-size: 0.92rem;
         }
+
 
         /* =========================
            FEATURED PROJECT
@@ -316,96 +389,359 @@
 
         .featured-project {
             position: relative;
+
             overflow: hidden;
 
             display: grid;
-            grid-template-columns: 0.9fr 1.1fr;
+
+            grid-template-columns: 0.95fr 1.05fr;
+
             gap: 40px;
 
             padding: 42px;
 
             background:
-                linear-gradient(135deg,
-                rgba(239,231,255,0.9),
-                rgba(237,248,255,0.9));
+                linear-gradient(
+                    135deg,
+                    rgba(239,231,255,0.9),
+                    rgba(237,248,255,0.9)
+                );
 
             border: 1px solid white;
+
             border-radius: 34px;
 
             box-shadow: 0 22px 60px rgba(91, 65, 120, 0.11);
         }
 
+
+        /* =========================
+           INTERACTIVE IRRIGATION
+        ========================== */
+
         .project-visual {
-            min-height: 360px;
+            min-height: 390px;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
             border-radius: 27px;
 
             background:
-                radial-gradient(circle at 50% 35%, #ffffff 0, transparent 30%),
-                linear-gradient(145deg, #dcd0f7, #d8ecf8);
+                radial-gradient(
+                    circle at 50% 30%,
+                    #ffffff 0,
+                    transparent 30%
+                ),
+                linear-gradient(
+                    145deg,
+                    #dcd0f7,
+                    #d8ecf8
+                );
 
             position: relative;
+
             overflow: hidden;
         }
 
-        .plant {
-            font-size: 7rem;
-            filter: drop-shadow(0 15px 15px rgba(80,60,100,0.12));
-        }
+        /* soft ground */
 
-        .sensor-circle {
+        .ground {
             position: absolute;
-            width: 90px;
-            height: 90px;
+
+            bottom: 38px;
+
+            width: 75%;
+            height: 65px;
+
+            background: #c8b7a3;
+
             border-radius: 50%;
-            border: 2px dashed rgba(114, 86, 160, 0.45);
-            animation: pulse 3s infinite;
+
+            opacity: 0.65;
         }
 
-        @keyframes pulse {
+        /* plant */
+
+        .plant {
+            position: relative;
+
+            z-index: 3;
+
+            font-size: 7rem;
+
+            transform-origin: bottom center;
+
+            transition: 0.3s;
+        }
+
+        .plant.watering {
+            animation: plantSway 2s ease-in-out infinite;
+        }
+
+        @keyframes plantSway {
+
             0%, 100% {
-                transform: scale(0.9);
-                opacity: 0.4;
+                transform: rotate(-2deg);
             }
 
             50% {
-                transform: scale(1.15);
+                transform: rotate(2deg);
+            }
+
+        }
+
+
+        /* sensor */
+
+        .sensor {
+            position: absolute;
+
+            bottom: 50px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 25px;
+            height: 65px;
+
+            background: #74618c;
+
+            border-radius: 8px;
+
+            z-index: 4;
+        }
+
+        .sensor::before {
+            content: "";
+
+            position: absolute;
+
+            width: 42px;
+            height: 42px;
+
+            border-radius: 50%;
+
+            border: 2px solid #9d83ba;
+
+            top: 10px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            animation: sensorPulse 2.5s infinite;
+        }
+
+        @keyframes sensorPulse {
+
+            0%, 100% {
+                transform: translateX(-50%) scale(0.8);
+
+                opacity: 0.35;
+            }
+
+            50% {
+                transform: translateX(-50%) scale(1.2);
+
                 opacity: 0.8;
             }
+
         }
+
+
+        /* water drops */
+
+        .water-drops {
+            position: absolute;
+
+            top: 65px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 150px;
+            height: 200px;
+
+            pointer-events: none;
+
+            opacity: 0;
+        }
+
+        .water-drops.active {
+            opacity: 1;
+        }
+
+        .drop {
+            position: absolute;
+
+            width: 12px;
+            height: 18px;
+
+            background: #76b9df;
+
+            border-radius: 60% 60% 65% 65%;
+
+            transform: rotate(45deg);
+
+            animation: falling 1.1s linear infinite;
+        }
+
+        .drop:nth-child(1) {
+            left: 20px;
+            animation-delay: 0s;
+        }
+
+        .drop:nth-child(2) {
+            left: 55px;
+            animation-delay: 0.25s;
+        }
+
+        .drop:nth-child(3) {
+            left: 90px;
+            animation-delay: 0.5s;
+        }
+
+        .drop:nth-child(4) {
+            left: 120px;
+            animation-delay: 0.75s;
+        }
+
+        @keyframes falling {
+
+            0% {
+                top: 0;
+
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                top: 180px;
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* moisture status */
+
+        .moisture-status {
+            position: absolute;
+
+            top: 18px;
+            left: 18px;
+
+            padding: 8px 13px;
+
+            background: rgba(255,255,255,0.78);
+
+            border: 1px solid rgba(255,255,255,0.9);
+
+            border-radius: 50px;
+
+            color: #725d88;
+
+            font-size: 0.78rem;
+
+            font-weight: 700;
+
+            z-index: 10;
+        }
+
+        .moisture-status span {
+            color: #a47ac8;
+        }
+
+
+        /* water button */
+
+        .water-control {
+            position: absolute;
+
+            bottom: 18px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            z-index: 10;
+
+            padding: 10px 17px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background: rgba(255,255,255,0.9);
+
+            color: #6f568d;
+
+            font-family: inherit;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            box-shadow: 0 8px 20px rgba(80,60,100,0.12);
+
+            transition: 0.3s;
+        }
+
+        .water-control:hover {
+            transform: translateX(-50%) translateY(-3px);
+        }
+
+
+        /* project content */
 
         .project-content .project-label {
             display: inline-block;
+
             color: #8b69b9;
+
             font-size: 0.78rem;
+
             font-weight: 700;
+
             letter-spacing: 1.5px;
+
             text-transform: uppercase;
+
             margin-bottom: 10px;
         }
 
         .project-content h3 {
             font-family: "Playfair Display", serif;
+
             font-size: clamp(2rem, 4vw, 3rem);
+
             color: #493856;
+
             margin-bottom: 15px;
         }
 
         .project-content p {
             color: #70677b;
+
             margin-bottom: 20px;
         }
 
         .contribution {
             padding: 18px;
+
             margin: 22px 0;
 
             background: rgba(255,255,255,0.7);
+
             border-left: 4px solid #a385cc;
+
             border-radius: 14px;
         }
 
@@ -415,35 +751,48 @@
 
         .tags {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 8px;
+
             margin: 20px 0 25px;
         }
 
         .tag {
             padding: 7px 12px;
+
             background: rgba(255,255,255,0.75);
+
             border: 1px solid #e7dcf3;
+
             border-radius: 50px;
 
             font-size: 0.78rem;
+
             color: #725c89;
         }
 
+
         /* =========================
-           OTHER PROJECTS
+           PROJECT CARDS
         ========================== */
 
         .projects-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 22px;
         }
 
         .project-card {
             background: rgba(255,255,255,0.72);
+
             border: 1px solid rgba(255,255,255,0.9);
+
             border-radius: 25px;
+
             padding: 28px;
 
             box-shadow: 0 15px 45px rgba(91,65,120,0.07);
@@ -453,6 +802,7 @@
 
         .project-card:hover {
             transform: translateY(-8px);
+
             box-shadow: 0 22px 50px rgba(91,65,120,0.12);
         }
 
@@ -461,32 +811,42 @@
             height: 52px;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
             border-radius: 16px;
+
             background: #f0e8ff;
 
             font-size: 1.5rem;
+
             margin-bottom: 20px;
         }
 
         .project-card h3 {
             font-family: "Playfair Display", serif;
+
             font-size: 1.45rem;
+
             color: #554060;
+
             margin-bottom: 10px;
         }
 
         .project-card p {
             font-size: 0.9rem;
+
             color: #7b7181;
+
             margin-bottom: 20px;
         }
 
         .project-link {
             color: #8061a9;
+
             font-weight: 700;
+
             font-size: 0.88rem;
         }
 
@@ -494,16 +854,22 @@
             color: #5d4381;
         }
 
+
         /* =========================
-           TECH STACK
+           SKILLS
         ========================== */
 
         .skills-wrapper {
             display: flex;
+
             justify-content: center;
+
             flex-wrap: wrap;
+
             gap: 13px;
+
             max-width: 850px;
+
             margin: auto;
         }
 
@@ -511,10 +877,13 @@
             padding: 12px 19px;
 
             background: rgba(255,255,255,0.75);
+
             border: 1px solid #e7dcf2;
+
             border-radius: 50px;
 
             color: #675275;
+
             font-weight: 600;
 
             box-shadow: 0 7px 20px rgba(91,65,120,0.05);
@@ -524,8 +893,10 @@
 
         .skill:hover {
             transform: translateY(-4px);
-            background: #fff;
+
+            background: white;
         }
+
 
         /* =========================
            LEARNING
@@ -533,16 +904,20 @@
 
         .learning-box {
             max-width: 900px;
+
             margin: auto;
 
             padding: 40px;
 
             background:
-                linear-gradient(135deg,
-                rgba(255,241,248,0.8),
-                rgba(239,233,255,0.85));
+                linear-gradient(
+                    135deg,
+                    rgba(255,241,248,0.8),
+                    rgba(239,233,255,0.85)
+                );
 
             border: 1px solid white;
+
             border-radius: 30px;
 
             box-shadow: 0 18px 50px rgba(91,65,120,0.08);
@@ -550,9 +925,13 @@
 
         .learning-path {
             display: flex;
+
             justify-content: center;
+
             align-items: center;
+
             flex-wrap: wrap;
+
             gap: 12px;
 
             margin-top: 25px;
@@ -560,18 +939,24 @@
 
         .learning-step {
             padding: 13px 18px;
+
             background: rgba(255,255,255,0.8);
+
             border: 1px solid #e8ddf3;
+
             border-radius: 15px;
 
             font-weight: 600;
+
             color: #675476;
         }
 
         .arrow {
             color: #a082c7;
+
             font-size: 1.2rem;
         }
+
 
         /* =========================
            EDUCATION
@@ -579,30 +964,41 @@
 
         .education-card {
             max-width: 800px;
+
             margin: auto;
 
             display: grid;
+
             grid-template-columns: 140px 1fr;
+
             gap: 30px;
+
             align-items: center;
         }
 
         .education-year {
             font-family: "Playfair Display", serif;
+
             font-size: 1.4rem;
+
             color: #8564ac;
+
             text-align: center;
         }
 
         .education-content {
             padding-left: 30px;
+
             border-left: 2px solid #ded0ef;
         }
 
         .education-content h3 {
             font-family: "Playfair Display", serif;
+
             font-size: 1.6rem;
+
             color: #51405f;
+
             margin-bottom: 5px;
         }
 
@@ -612,16 +1008,22 @@
 
         .current {
             display: inline-block;
+
             margin-top: 10px;
+
             padding: 6px 12px;
 
             background: #eee5ff;
+
             color: #77569e;
 
             border-radius: 50px;
+
             font-size: 0.78rem;
+
             font-weight: 700;
         }
+
 
         /* =========================
            NEXT
@@ -633,11 +1035,15 @@
 
         .next-box {
             max-width: 800px;
+
             margin: auto;
+
             padding: 45px;
 
             background: rgba(255,255,255,0.72);
+
             border: 1px solid white;
+
             border-radius: 30px;
 
             box-shadow: 0 18px 50px rgba(91,65,120,0.08);
@@ -645,15 +1051,20 @@
 
         .next-box .emoji {
             font-size: 2.5rem;
+
             margin-bottom: 12px;
         }
 
         .next-box p {
             max-width: 650px;
+
             margin: auto;
+
             color: #73697b;
+
             font-size: 1.03rem;
         }
+
 
         /* =========================
            GITHUB
@@ -665,13 +1076,20 @@
 
         .github-card {
             max-width: 700px;
+
             margin: auto;
+
             padding: 45px;
 
             background:
-                linear-gradient(135deg, #eee5ff, #e8f4ff);
+                linear-gradient(
+                    135deg,
+                    #eee5ff,
+                    #e8f4ff
+                );
 
             border-radius: 30px;
+
             border: 1px solid white;
 
             box-shadow: 0 20px 55px rgba(91,65,120,0.1);
@@ -679,15 +1097,20 @@
 
         .github-card h2 {
             font-family: "Playfair Display", serif;
+
             font-size: 2.3rem;
+
             color: #4d3b59;
+
             margin-bottom: 12px;
         }
 
         .github-card p {
             color: #746b7b;
+
             margin-bottom: 25px;
         }
+
 
         /* =========================
            FOOTER
@@ -695,14 +1118,18 @@
 
         footer {
             padding: 35px 0;
+
             text-align: center;
+
             color: #887d91;
+
             font-size: 0.85rem;
         }
 
         footer span {
             color: #a17ac8;
         }
+
 
         /* =========================
            RESPONSIVE
@@ -729,6 +1156,7 @@
 
             .education-card {
                 grid-template-columns: 1fr;
+
                 gap: 10px;
             }
 
@@ -741,6 +1169,7 @@
             }
         }
 
+
         @media (max-width: 560px) {
 
             section {
@@ -748,7 +1177,9 @@
             }
 
             .hero h1 {
-                font-size: 3.5rem;
+                font-size: 4rem;
+
+                letter-spacing: -1px;
             }
 
             .featured-project {
@@ -756,7 +1187,7 @@
             }
 
             .project-visual {
-                min-height: 250px;
+                min-height: 300px;
             }
 
             .projects-grid {
@@ -778,26 +1209,51 @@
                 transform: rotate(90deg);
             }
         }
+
     </style>
+
 </head>
 
+
 <body>
+
 
     <!-- =========================
          NAVIGATION
     ========================== -->
 
     <nav>
-        <a href="#home" class="logo">Deshna ✦</a>
+
+        <a href="#home" class="logo">
+            Deshna ✦
+        </a>
 
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#github">GitHub</a></li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#github">GitHub</a>
+            </li>
+
         </ul>
+
     </nav>
+
 
 
     <!-- =========================
@@ -807,7 +1263,9 @@
     <section class="hero" id="home">
 
         <div class="floating-shape shape-one"></div>
+
         <div class="floating-shape shape-two"></div>
+
 
         <div class="container">
 
@@ -817,14 +1275,17 @@
                     ✦ Hello, I'm Deshna
                 </div>
 
+
                 <h1>
-                    Building my<br>
-                    <span>coding journey.</span>
+                    Deshna<br>
+                    <span>Saanvi M</span>
                 </h1>
+
 
                 <h2>
                     B.Tech CSIT Student · Aspiring Backend Developer
                 </h2>
+
 
                 <p>
                     I'm a second-year Computer Science & Information Technology
@@ -832,11 +1293,15 @@
                     data structures, projects and backend development.
                 </p>
 
+
                 <div class="hero-buttons">
 
-                    <a href="#projects" class="btn btn-primary">
+                    <a
+                        href="#projects"
+                        class="btn btn-primary">
                         Explore My Work ✦
                     </a>
+
 
                     <a
                         href="https://github.com/deshnasaanvii-pixel"
@@ -854,6 +1319,7 @@
     </section>
 
 
+
     <!-- =========================
          ABOUT
     ========================== -->
@@ -863,19 +1329,31 @@
         <div class="container">
 
             <div class="section-heading">
-                <small>About Me</small>
-                <h2>A little about my journey</h2>
+
+                <small>
+                    About Me
+                </small>
+
+                <h2>
+                    A little about my journey
+                </h2>
+
                 <p>
                     Learning, building and gradually turning curiosity into code.
                 </p>
+
             </div>
 
 
             <div class="about-grid">
 
+
                 <div class="glass-card">
 
-                    <h3>Hi, I'm Deshna 👋</h3>
+                    <h3>
+                        Hi, I'm Deshna 👋
+                    </h3>
+
 
                     <p>
                         I started my engineering journey in 2025 and I'm currently
@@ -883,7 +1361,9 @@
                         at REVA University.
                     </p>
 
+
                     <br>
+
 
                     <p>
                         I'm interested in backend development and enjoy improving
@@ -891,7 +1371,9 @@
                         data structures and hands-on projects.
                     </p>
 
+
                     <br>
+
 
                     <p>
                         I'm currently building my skills step by step while
@@ -901,26 +1383,59 @@
                 </div>
 
 
+
                 <div class="glass-card quick-info">
 
-                    <div class="info-item">
-                        <strong>🎓 Education</strong>
-                        <span>B.Tech CSIT · REVA University</span>
-                    </div>
 
                     <div class="info-item">
-                        <strong>📚 Current Semester</strong>
-                        <span>2nd Year · 3rd Semester</span>
+
+                        <strong>
+                            🎓 Education
+                        </strong>
+
+                        <span>
+                            B.Tech CSIT · REVA University
+                        </span>
+
                     </div>
 
-                    <div class="info-item">
-                        <strong>💻 Focus</strong>
-                        <span>Backend Development & DSA</span>
-                    </div>
 
                     <div class="info-item">
-                        <strong>🌱 Learning</strong>
-                        <span>Programming · Projects · Problem Solving</span>
+
+                        <strong>
+                            📚 Current Semester
+                        </strong>
+
+                        <span>
+                            2nd Year · 3rd Semester
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <strong>
+                            💻 Focus
+                        </strong>
+
+                        <span>
+                            Backend Development & DSA
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <strong>
+                            🌱 Learning
+                        </strong>
+
+                        <span>
+                            Programming · Projects · Problem Solving
+                        </span>
+
                     </div>
 
                 </div>
@@ -930,6 +1445,7 @@
         </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -940,11 +1456,16 @@
 
         <div class="container">
 
+
             <div class="section-heading">
 
-                <small>Featured Project</small>
+                <small>
+                    Featured Project
+                </small>
 
-                <h2>Something I built with a team</h2>
+                <h2>
+                    Something I built with a team
+                </h2>
 
                 <p>
                     A hands-on project that took my learning beyond the screen.
@@ -953,29 +1474,74 @@
             </div>
 
 
+
             <div class="featured-project">
+
+
+                <!-- INTERACTIVE VISUAL -->
 
                 <div class="project-visual">
 
-                    <div class="sensor-circle"></div>
 
-                    <div class="plant">
+                    <div class="moisture-status">
+                        Soil: <span id="moistureText">Moderate</span>
+                    </div>
+
+
+                    <div class="ground"></div>
+
+
+                    <div
+                        class="water-drops"
+                        id="waterDrops">
+
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+
+                    </div>
+
+
+                    <div
+                        class="plant"
+                        id="plant">
                         🌱
                     </div>
+
+
+                    <div class="sensor"></div>
+
+
+                    <button
+                        type="button"
+                        class="water-control"
+                        id="waterButton">
+
+                        💧 Start Irrigation
+
+                    </button>
+
 
                 </div>
 
 
+
+                <!-- PROJECT INFORMATION -->
+
                 <div class="project-content">
+
 
                     <span class="project-label">
                         IoT · Team Project
                     </span>
 
+
                     <h3>
                         Smart Water<br>
                         Irrigation System
                     </h3>
+
 
                     <p>
                         A team-based IoT project developed using an ESP and
@@ -986,13 +1552,16 @@
 
                     <div class="contribution">
 
-                        <strong>My Contribution</strong>
+                        <strong>
+                            My Contribution
+                        </strong>
+
 
                         <p>
-                            I contributed to the overall development of the project
-                            alongside my teammates, with hands-on involvement in
-                            assembling the hardware components and supporting the
-                            project implementation.
+                            I contributed to the overall development of the
+                            project alongside my teammates, with hands-on
+                            involvement in assembling the hardware components
+                            and supporting the project implementation.
                         </p>
 
                     </div>
@@ -1000,13 +1569,32 @@
 
                     <div class="tags">
 
-                        <span class="tag">IoT</span>
-                        <span class="tag">ESP</span>
-                        <span class="tag">Soil Moisture Sensor</span>
-                        <span class="tag">Hardware</span>
-                        <span class="tag">Team Project</span>
+                        <span class="tag">
+                            IoT
+                        </span>
+
+                        <span class="tag">
+                            ESP
+                        </span>
+
+                        <span class="tag">
+                            Soil Moisture Sensor
+                        </span>
+
+                        <span class="tag">
+                            Hardware
+                        </span>
+
+                        <span class="tag">
+                            Team Project
+                        </span>
 
                     </div>
+
+
+                    <p style="font-size:0.82rem; color:#8b7c96;">
+                        ✦ Try the irrigation button on the project illustration.
+                    </p>
 
                 </div>
 
@@ -1017,6 +1605,7 @@
     </section>
 
 
+
     <!-- =========================
          OTHER PROJECTS
     ========================== -->
@@ -1025,11 +1614,16 @@
 
         <div class="container">
 
+
             <div class="section-heading">
 
-                <small>More Work</small>
+                <small>
+                    More Work
+                </small>
 
-                <h2>Projects & Coding Practice</h2>
+                <h2>
+                    Projects & Coding Practice
+                </h2>
 
                 <p>
                     A collection of projects and coding work I've been building
@@ -1037,6 +1631,7 @@
                 </p>
 
             </div>
+
 
 
             <div class="projects-grid">
@@ -1050,21 +1645,29 @@
                         ✏️
                     </div>
 
-                    <h3>Line Editor</h3>
+
+                    <h3>
+                        Line Editor
+                    </h3>
+
 
                     <p>
                         A programming project focused on implementing
                         and working with text editing concepts.
                     </p>
 
+
                     <a
                         href="https://github.com/deshnasaanvii-pixel/line_editor"
                         target="_blank"
                         class="project-link">
+
                         View on GitHub ↗
+
                     </a>
 
                 </div>
+
 
 
                 <!-- LEETCODE -->
@@ -1075,21 +1678,29 @@
                         🧩
                     </div>
 
-                    <h3>LeetCode Solutions</h3>
+
+                    <h3>
+                        LeetCode Solutions
+                    </h3>
+
 
                     <p>
                         My collection of LeetCode practice covering
                         programming, algorithms and data structures.
                     </p>
 
+
                     <a
                         href="https://github.com/deshnasaanvii-pixel/leetcode-solutions"
                         target="_blank"
                         class="project-link">
+
                         View Repository ↗
+
                     </a>
 
                 </div>
+
 
 
                 <!-- HACKERRANK -->
@@ -1100,27 +1711,36 @@
                         💡
                     </div>
 
-                    <h3>HackerRank Portfolio</h3>
+
+                    <h3>
+                        HackerRank Portfolio
+                    </h3>
+
 
                     <p>
                         A collection of HackerRank problems and coursework
-                        completed as part of my third-semester learning.
+                        completed as part of my engineering learning.
                     </p>
+
 
                     <a
                         href="https://github.com/deshnasaanvii-pixel/HackerRank-3rdSem-Portfolio"
                         target="_blank"
                         class="project-link">
+
                         View Repository ↗
+
                     </a>
 
                 </div>
+
 
             </div>
 
         </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -1131,11 +1751,18 @@
 
         <div class="container">
 
+
             <div class="section-heading">
 
-                <small>Tech Stack</small>
+                <small>
+                    Tech Stack
+                </small>
 
-                <h2>Tools I'm working with</h2>
+
+                <h2>
+                    Tools I'm working with
+                </h2>
+
 
                 <p>
                     Technologies and concepts I'm currently learning and practicing.
@@ -1144,22 +1771,47 @@
             </div>
 
 
+
             <div class="skills-wrapper">
 
-                <span class="skill">C</span>
-                <span class="skill">C++</span>
-                <span class="skill">Python</span>
-                <span class="skill">Data Structures</span>
-                <span class="skill">Algorithms</span>
-                <span class="skill">Git</span>
-                <span class="skill">GitHub</span>
-                <span class="skill">VS Code</span>
+                <span class="skill">
+                    C
+                </span>
+
+                <span class="skill">
+                    C++
+                </span>
+
+                <span class="skill">
+                    Python
+                </span>
+
+                <span class="skill">
+                    Data Structures
+                </span>
+
+                <span class="skill">
+                    Algorithms
+                </span>
+
+                <span class="skill">
+                    Git
+                </span>
+
+                <span class="skill">
+                    GitHub
+                </span>
+
+                <span class="skill">
+                    VS Code
+                </span>
 
             </div>
 
         </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -1170,48 +1822,66 @@
 
         <div class="container">
 
+
             <div class="section-heading">
 
-                <small>Currently Learning</small>
+                <small>
+                    Currently Learning
+                </small>
 
-                <h2>Where I'm headed</h2>
+
+                <h2>
+                    Where I'm headed
+                </h2>
 
             </div>
 
 
+
             <div class="learning-box">
 
+
                 <p style="text-align:center; color:#766c7d;">
+
                     I'm building my fundamentals one step at a time,
                     with a focus on programming and backend development.
+
                 </p>
 
 
+
                 <div class="learning-path">
+
 
                     <div class="learning-step">
                         🧠 DSA
                     </div>
 
+
                     <div class="arrow">
                         →
                     </div>
+
 
                     <div class="learning-step">
                         💻 C++
                     </div>
 
+
                     <div class="arrow">
                         →
                     </div>
+
 
                     <div class="learning-step">
                         ⚙️ Backend Development
                     </div>
 
+
                     <div class="arrow">
                         →
                     </div>
+
 
                     <div class="learning-step">
                         🗄️ Databases
@@ -1226,6 +1896,7 @@
     </section>
 
 
+
     <!-- =========================
          EDUCATION
     ========================== -->
@@ -1234,21 +1905,32 @@
 
         <div class="container">
 
+
             <div class="section-heading">
 
-                <small>Education</small>
+                <small>
+                    Education
+                </small>
 
-                <h2>My academic journey</h2>
+
+                <h2>
+                    My academic journey
+                </h2>
 
             </div>
 
 
+
             <div class="education-card">
 
+
                 <div class="education-year">
+
                     2025<br>
                     — Present
+
                 </div>
+
 
 
                 <div class="education-content">
@@ -1257,9 +1939,11 @@
                         B.Tech in Computer Science & Information Technology
                     </h3>
 
+
                     <p>
                         REVA University
                     </p>
+
 
                     <span class="current">
                         2nd Year · 3rd Semester
@@ -1274,6 +1958,7 @@
     </section>
 
 
+
     <!-- =========================
          WHAT'S NEXT
     ========================== -->
@@ -1282,25 +1967,36 @@
 
         <div class="container next-section">
 
+
             <div class="section-heading">
 
-                <small>What's Next?</small>
+                <small>
+                    What's Next?
+                </small>
 
-                <h2>Still learning. Still building.</h2>
+
+                <h2>
+                    Still learning. Still building.
+                </h2>
 
             </div>
 
 
+
             <div class="next-box">
+
 
                 <div class="emoji">
                     🌷
                 </div>
 
+
                 <p>
+
                     My current goal is to strengthen my programming and DSA
                     fundamentals, build more practical projects and gradually
                     work toward becoming a backend developer.
+
                 </p>
 
             </div>
@@ -1308,6 +2004,7 @@
         </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -1318,20 +2015,28 @@
 
         <div class="container">
 
+
             <div class="github-card">
 
-                <h2>Want to see more?</h2>
+
+                <h2>
+                    Want to see more?
+                </h2>
+
 
                 <p>
                     Explore my repositories, coding practice and projects
                     on GitHub.
                 </p>
 
+
                 <a
                     href="https://github.com/deshnasaanvii-pixel"
                     target="_blank"
                     class="btn btn-primary">
+
                     Visit My GitHub ↗
+
                 </a>
 
             </div>
@@ -1339,6 +2044,7 @@
         </div>
 
     </section>
+
 
 
     <!-- =========================
@@ -1349,11 +2055,65 @@
 
         <div class="container">
 
-            Made with <span>♡</span> by Deshna Saanvi · 2026
+            Made with <span>♡</span> by Deshna Saanvi M · 2026
 
         </div>
 
     </footer>
+
+
+
+    <!-- =========================
+         INTERACTIVE IRRIGATION
+    ========================== -->
+
+    <script>
+
+        const waterButton = document.getElementById("waterButton");
+
+        const waterDrops = document.getElementById("waterDrops");
+
+        const plant = document.getElementById("plant");
+
+        const moistureText = document.getElementById("moistureText");
+
+
+        let irrigationOn = false;
+
+
+        waterButton.addEventListener("click", function () {
+
+            irrigationOn = !irrigationOn;
+
+
+            if (irrigationOn) {
+
+                waterDrops.classList.add("active");
+
+                plant.classList.add("watering");
+
+                moistureText.textContent = "Moist";
+
+                waterButton.textContent = "⏸ Stop Irrigation";
+
+            }
+
+            else {
+
+                waterDrops.classList.remove("active");
+
+                plant.classList.remove("watering");
+
+                moistureText.textContent = "Moderate";
+
+                waterButton.textContent = "💧 Start Irrigation";
+
+            }
+
+        });
+
+    </script>
+
 
 </body>
 </html>
